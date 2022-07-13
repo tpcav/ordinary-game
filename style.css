@@ -44,8 +44,9 @@ button {
   width: 200px;
   margin-top: 15px;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .header-image {
