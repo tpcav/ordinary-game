@@ -43,7 +43,7 @@ button {
   padding: 10px;
   width: 200px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,4 +63,8 @@ button {
     text-align: center;
     align-items: center;
   }
+}
+
+.footer {
+  margin-bottom: 15px;
 }
