@@ -64,6 +64,11 @@ button {
     text-align: center;
     align-items: center;
   }
+
+  input {
+    margin-bottom: 15px;
+    width: 50%;
+  }
 }
 
 .footer {
