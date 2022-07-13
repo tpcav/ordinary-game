@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <center><img class="header-image" src="header_image.png"></center>
+
+  <div class="how-to-play">
+    <p class="how-to">How to play?</p>
+    <p>📖 There is a list of 4 letter letter nouns sorted in alphabetical order.</p>
+    <p>🎲 You will be display a random word from that list.</p>
+    <p>💭 Now, guess the next word in the list by thinking in alphabetical order and using your knowledge of 4 letter nouns.</p>
+  </div>
+
+  <p class="random-word">The random word is:</p>
+  <p id="rand-word"></p>
+
+  <p class="guess-word">Guess the next word (thinking alphabetically):</p>
+  <input type="text" id="checkGuess">
+
+  <button onclick="checkGuess()">Check your guess</button>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

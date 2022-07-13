@@ -1,0 +1,64 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+}
+
+h1 {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica;
+  font-weight: 200;
+  font-size: 16pt;
+}
+
+.how-to {
+  font-weight: 500;
+}
+
+.how-to-play {
+  position: relative;
+  margin: 10px;
+}
+
+.random-word {
+  font-weight: 500;
+}
+
+.guess-word {
+  font-weight: 500;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 25%;
+}
+
+button {
+  padding: 10px;
+  width: 200px;
+  margin-top: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.header-image {
+  display: flex;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-image {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+  }
+}
