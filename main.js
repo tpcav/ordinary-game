@@ -1010,13 +1010,15 @@ var nextWord = nounList.at(nounList.indexOf(randWord) + 1);
 // Check the user's guess by comparing to next_word
 function checkGuess() {
   var value = document.getElementById("checkGuess").value;
-
+ 
   if (value == nextWord) {
-    window.alert("You are correct!");
+    window.alert("You are correct! Refresh page for a new word.");
   } else {
-    window.alert("You did not guess the correct word.");
+    window.alert("You did not guess the correct word. The next word is " + nextWord + ".");
+
   }
   document.getElementById("message");
+
 }
 
 document.getElementById("rand-word").innerHTML = randWord;
