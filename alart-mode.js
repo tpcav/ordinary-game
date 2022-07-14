@@ -1003,22 +1003,23 @@ var nounList = [
 
 // A random word generated from a list
 var randWord = nounList[Math.floor(Math.random() * nounList.length)];
-
-// Getting the next word by adding 1 to the index of the random word
 var nextWord = nounList.at(nounList.indexOf(randWord) + 1);
 
-// Check the user's guess by comparing to next_word
-function checkGuess() {
-  var value = document.getElementById("checkGuess").value;
- 
-  if (value == nextWord) {
-    window.alert("You are correct! Refresh page for a new word.");
-  } else {
-    window.alert("You did not guess the correct word. The next word is " + nextWord + ".");
+var numTurns = 0;
+var hasWon = false;
 
+while (userGuess != nextWord && numTurns < 4) {
+  numTurns++;
+  var userGuess = prompt("The word is " + randWord + ". Guess the next word in the list by thinking alphabetically. You are on turn " + numTurns + ".");
+
+  if (userGuess == nextWord) {
+    hasWon == true;
   }
-  //document.getElementById("message");
-
 }
 
-//document.getElementById("rand-word").innerHTML = randWord;
+if (hasWon == true) {
+  alert("You are correct")
+}
+else if (hasWon == false) {
+  alert("Try again tomorrow. The next word in the list was " + nextWord + ".")
+}
