@@ -1010,16 +1010,15 @@ var hasWon = false;
 
 while (userGuess != nextWord && numTurns < 4) {
   numTurns++;
-  var userGuess = prompt("The word is " + randWord + ". Guess the next word in the list by thinking alphabetically. You are on turn " + numTurns + ".");
+  var userGuess = prompt("The random word is 🎲" + randWord + ". Guess the next word in the list by thinking alphabetically. You are on turn " + numTurns + ". You have 4 guesses before the game is over 💭");
 
-  if (userGuess == nextWord) {
+  if (nextWord == userGuess) {
+    alert("You are correct!😎 Thank you for playing. See you tomorrow.")
     hasWon == true;
   }
-}
-
-if (hasWon == true) {
-  alert("You are correct")
-}
-else if (hasWon == false) {
-  alert("Try again tomorrow. The next word in the list was " + nextWord + ".")
+  
+  else if (numTurns == 4) {
+    alert("You did not guess the next word in the list. The word is " + nextWord + ". Try again tomorrow.")
+    hasWon == false;
+  }
 }
