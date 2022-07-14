@@ -1010,7 +1010,7 @@ var hasWon = false;
 
 while (userGuess != nextWord && numTurns < 4) {
   numTurns++;
-  var userGuess = prompt("The random word is 🎲" + randWord + ". Guess the next word in the list by thinking alphabetically. You are on turn " + numTurns + ". You have 4 guesses before the game is over 💭");
+  var userGuess = prompt("🎲 The random word is " + randWord + ". Guess the next word in the list by thinking alphabetically. You are on turn " + numTurns + ". You have 4 guesses before the game is over 💭");
 
   if (nextWord == userGuess) {
     alert("You are correct!😎 Thank you for playing. See you tomorrow.")
