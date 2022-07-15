@@ -1010,15 +1010,15 @@ var hasWon = false;
 
 while (userGuess != nextWord && numTurns < 4) {
   numTurns++;
-  var userGuess = prompt("🎲 The random 4 letter noun word is " + randWord + ". Guess the next word in the list by thinking alphabetically. You are on turn " + numTurns + ". You have 4 guesses before the game is over 💭");
+  var userGuess = prompt("🎲 The random 4 letter noun word is " + randWord + ". Guess the next word in the list by thinking alphabetically. You are on guess " + numTurns + ". You have 4 guesses before the game is over 💭");
 
   if (nextWord == userGuess) {
-    alert("You are correct!😎 Thank you for playing. See you tomorrow.")
+    alert("You are correct!😎 Thank you for playing. Refresh the page for a new word.")
     hasWon == true;
   }
   
   else if (numTurns == 4) {
-    alert("You did not guess the next word in the list. The word is " + nextWord + ". Try again tomorrow.")
+    alert("You did not guess the next word in the list. The word is " + nextWord + ". Refresh the page for a new word.")
     hasWon == false;
   }
 }
