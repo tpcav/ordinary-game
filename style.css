@@ -95,5 +95,13 @@ a:hover, a:active {
 
 .refresh {
   text-align: center;
-  margin-top: 325px;
+  margin-top: 10px;
+}
+
+.header-refresh {
+  display: flex;
+  width: 40%;
+  margin-top: 175px;
+  text-align: center;
+  align-items: center;
 }
