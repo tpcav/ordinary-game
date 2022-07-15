@@ -74,3 +74,10 @@ button {
 .footer {
   margin-bottom: 15px;
 }
+
+button {
+  width: 150x;
+  font-family: Helvetica;
+  list-style: none;
+  height: 50px;
+}
