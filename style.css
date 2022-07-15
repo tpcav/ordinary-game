@@ -83,6 +83,7 @@ a:link, a:visited {
   text-decoration: none;
   display: inline-block;
   font-size: 12pt;
+  font-family: Helvetica;
   border-radius: 18px;
 }
 
