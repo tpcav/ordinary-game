@@ -1021,4 +1021,5 @@ while (userGuess != nextWord && numTurns < 4) {
     alert("You did not guess the next word in the list. The word is " + nextWord + ". Refresh the page for a new word.")
     hasWon == false;
   }
+
 }

@@ -92,3 +92,8 @@ a:hover, a:active {
   background-color: rgb(49, 49, 49);
   color: white;
 }
+
+.refresh {
+  text-align: center;
+  margin-top: 325px;
+}
