@@ -1001,6 +1001,9 @@ var nounList = [
   "zoom"
 ];
 
+document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+
+
 // A random word generated from a list
 var randWord = nounList[Math.floor(Math.random() * nounList.length)];
 document.getElementById("randWord").innerHTML = (randWord);
