@@ -11,37 +11,32 @@
   <meta property="og:description"        content="A word game where you think alphabetically." />
   <meta property="og:image"              content="meta_preview.png" />
   <title>Ordinary</title>
+  
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
-
-  <center><img class="header-image" src="header_image.png"></center>
-
-  <div class="how-to-play">
-    <p class="how-to">How to play?</p>
-    <p>📖 There is a large list of common 4 letter nouns sorted in alphabetical order.</p>
-    <p>🎲 You will be display a random word from that list.</p>
-    <p>💭 Now, guess the next word in the list by thinking in alphabetical order and using your knowledge of 4 letter nouns.</p>
-    <!-- <p>For Example:
-      Given the random 4 letter verb bail, bait comes after it in alphabetical
-      order because t comes after l in the order of the alphabet, and there
-      are no other verbs in between. When you cannot use the last letter
-      of the word, you go to the next one to the left and
-      start from abc... etc.</p> -->
-    <center><a href="game.html">Play</a></center>
+  
+  <div class="center-div">
+    <div class="random-word-title">
+      <p>🎲 The random word is:</p>
+    </div>
+    
+    <div class="random-word">
+      <p id="randWord"></p>
+    </div>
+    
+    <div class="next-word">
+      <input class="user-input" id="myInput" type="text"></input>
+    </div>
+    
+    <button class="enter-button" onclick="myFunction()">Enter</button>
+  
+    <div class="guess-word-title">
+      <p id ="door">🔤 Guess the next word thinking alphabetically.</p>
+    </div>
   </div>
 
-  <!-- <p class="random-word">The random word is:</p>
-  <p id="rand-word"></p>
-
-  <p class="guess-word">Guess the next word (use all lowercases):</p>
-  <center><input type="text" id="checkGuess"></center>
-
-  <center><button onclick="checkGuess()">Check your guess</button></center> -->
-
-  <center><p class="footer">Made by Thomas Cavalcante © 2022.</p></center>
-
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
