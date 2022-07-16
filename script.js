@@ -1013,15 +1013,15 @@ function myFunction() {
   var door = document.getElementById("myInput").value;
 
   if (door == nextWord) {
-    document.getElementById("door").innerHTML = "You are correct.";
+    document.getElementById("door").innerHTML = "😎 You are correct. Refresh the page for a new word.";
     myFunction();
   } 
   
   else if (door != nextWord) {
     numTurns -=1;
-    document.getElementById("door").innerHTML = "Wrong guess. You have  " + numTurns + " turns left.";
+    document.getElementById("door").innerHTML = "🤔 Wrong guess. You have  " + numTurns + " turns left.";
   if (numTurns == 0) {
-      document.getElementById("door").innerHTML = "You lost. The next word was " + nextWord + ".";
+      document.getElementById("door").innerHTML = "😱 You lost. The next word was " + nextWord + ". Refresh the page to play again!";
   }
  }
 }
