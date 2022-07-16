@@ -14,7 +14,8 @@ html, body {
 html, body {
   margin: 0;
   height: 100%;
-  overflow: hidden
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body
@@ -134,7 +135,7 @@ body
   position: absolute;
   margin: auto;
   text-align: center;
-  margin-top: -75px;
+  margin-top: -40px;
   font-size: 32pt;
   margin-left: 55px;
 }
