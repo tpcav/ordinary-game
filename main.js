@@ -1001,30 +1001,24 @@ var nounList = [
   "zoom"
 ];
 
-document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
-
-
 // A random word generated from a list
 var randWord = nounList[Math.floor(Math.random() * nounList.length)];
-document.getElementById("randWord").innerHTML = (randWord);
+
+// Getting the next word by adding 1 to the index of the random word
 var nextWord = nounList.at(nounList.indexOf(randWord) + 1);
 
-var numTurns = 4;
-var hasWon = false;
+// Check the user's guess by comparing to next_word
+function checkGuess() {
+  var value = document.getElementById("checkGuess").value;
+ 
+  if (value == nextWord) {
+    window.alert("You are correct! Refresh page for a new word.");
+  } else {
+    window.alert("You did not guess the correct word. The next word is " + nextWord + ".");
 
-function myFunction() {
-  var door = document.getElementById("myInput").value;
-
-  if (door == nextWord) {
-    document.getElementById("door").innerHTML = "😎 You are correct. Refresh the page for a new word.";
-    myFunction();
-  } 
-  
-  else if (door != nextWord) {
-    numTurns -=1;
-    document.getElementById("door").innerHTML = "🤔 Wrong guess. You have  " + numTurns + " turns left.";
-  if (numTurns == 0) {
-      document.getElementById("door").innerHTML = "😱 You lost. The next word was " + nextWord + ". Refresh the page to play again!";
   }
- }
+  //document.getElementById("message");
+
 }
+
+//document.getElementById("rand-word").innerHTML = randWord;

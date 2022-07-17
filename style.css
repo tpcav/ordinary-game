@@ -1,141 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Erica+One&family=Manrope:wght@500&family=Vast+Shadow&display=swap');
-
 html, body {
   min-height: 100%;
-  background-image: url("sky.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-attachment: inherit;    
-  top: 0px;
-  margin: 0px auto;
-  padding: 0;
 }
 
-html, body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  overflow-x: hidden;
+body {
+  display: grid;
 }
 
-body
-{
-  background-color: #fcfcfc;
-  min-height: 100vh;
-}
-
-.center-div
-{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 340px;
-  height: 600px;
-  background: rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.random-word-title {
-  position: absolute;
-  margin: auto;
+h1 {
+  font-family: Helvetica;
   text-align: center;
-  font-family: 'Manrope';
-  top: 0;
-  right: 0;
-  margin-top: 30px;
-  left: 0;
-  font-size: 18pt;
+}
+
+p {
+  font-family: Helvetica;
+  font-weight: 200;
+  font-size: 16pt;
+}
+
+.how-to {
+  font-weight: 500;
+}
+
+.how-to-play {
+  position: relative;
+  margin: 10px;
 }
 
 .random-word {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  align-items: middle;
-  margin-bottom: 350px;
-  font-family: 'Erica One';
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 24pt;
-  width: 150px;
-  height: 100px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.75);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
 }
 
-.next-word {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  align-items: middle;
-  margin-bottom: 220px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 24pt;
-  width: 150px;
-  height: 100px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.75);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.guess-word {
+  font-weight: 500;
 }
 
-.guess-word-title {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  top: 0;
-  right: 0;
-  margin-top: 450px;
-  left: 0;
-  font-family: 'Manrope';
-  font-size: 16pt;
-  width: 80%;
-  height: 25%;
-  border-radius: 15px;
+input {
+  margin-bottom: 15px;
+  width: 25%;
 }
 
-.user-input {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  top: 0;
-  right: 0;
-  font-family: 'Erica One';
-  bottom: 0;
-  left: 0;
-  font-size: 24pt;
-  width: 100px;
-  height: 50%;
+button {
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.enter-button {
-  position: absolute;
-  margin: auto;
+.header-image {
+  display: flex;
+  width: 30%;
   text-align: center;
-  margin-top: 405px;
-  margin-left: 132px;
-  font-family: 'Manrope';
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-image {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+  }
+
+  input {
+    margin-bottom: 15px;
+    width: 50%;
+  }
+}
+
+.footer {
+  margin-bottom: 7px;
+}
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 12pt;
-  width: 75px;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-  background: rgba(255, 255, 255, 0.75);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica;
+  margin: 40px;
+  border-radius: 18px;
 }
 
-.thinking {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  margin-top: -40px;
-  font-size: 32pt;
-  margin-left: 55px;
+a:hover, a:active {
+  background-color: rgb(49, 49, 49);
+  color: white;
 }
+
+.refresh {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.header-refresh {
+  display: flex;
+  width: 40%;
+  margin-top: 175px;
+  text-align: center;
+  align-items: center;
+}
+
