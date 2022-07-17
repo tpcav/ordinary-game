@@ -1169,7 +1169,7 @@
     // Match currentWord to wordInput
     function matchWords() {
       var nextWord = words.at(words.indexOf(currentWord.innerHTML) + 1);
-      if (wordInput.value == nextWord) {
+      if (wordInput.value.toLowerCase() == nextWord) {
         message.innerHTML = 'Correct!!!';
         return true;
       } else {
