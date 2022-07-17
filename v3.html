@@ -1212,7 +1212,7 @@
       var hasWon = false;
 
       function myFunction() {
-        var door = document.getElementById("myInput").value;
+        var door = document.getElementById("myInput").value.toLowerCase();
 
         if (door == nextWord) {
           document.getElementById("door").innerHTML = "😎 You are correct. Refresh the page for a new word.";
