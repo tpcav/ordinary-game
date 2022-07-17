@@ -74,7 +74,7 @@
           </div>
         
         <p id="warning" class="lead m-5">You have 
-          <span class="text-success" id="seconds">5</span> seconds to guess each word or the game ends. Time resets when you are correct.
+          <span class="text-success" id="seconds">5</span> seconds to guess each word or the game ends. When you are correct, a new word is given and time resets.
         </p>
 
         <!-- Instructions -->
@@ -1170,12 +1170,12 @@
 
     // Match currentWord to wordInput
     function matchWords() {
-      var nextWord = words.at(words.indexOf(currentWord.innerHTML) + 1);
+      const nextWord = words.at(words.indexOf(currentWord.innerHTML) + 1);
       if (wordInput.value.toLowerCase() == nextWord) {
-        message.innerHTML = 'Correct!!!';
+        message.innerHTML = '😎 Correct! Keep going.';
         return true;
       } else {
-        message.innerHTML = '';
+        message.innerHTML = 'Think alphabetically.';
         return false;
       }
     }
@@ -1186,6 +1186,7 @@
       const randIndex = Math.floor(Math.random() * words.length);
       // Output random word
       currentWord.innerHTML = words[randIndex];
+      
     }
 
     // Countdown timer
@@ -1201,11 +1202,14 @@
       // Show time
       timeDisplay.innerHTML = time;
     }
-
+    
     // Check game status
     function checkStatus() {
+
+      //const nextWord = words.at(words.indexOf(currentWord.innerHTML) + 1);
       if (!isPlaying && time === 0) {
-        message.innerHTML = "Game Over!!! Refresh page to try again.";
+        const nextWord = words.at(words.indexOf(currentWord.innerHTML) + 1);
+        message.innerHTML = "Round Over! The next word after was " + nextWord + ". Refresh page to try again.";
         score = -1;
       }
     }
